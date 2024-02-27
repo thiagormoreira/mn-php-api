@@ -14,13 +14,13 @@ Certifique-se de ter os seguintes itens instalados em sua máquina:
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-projeto.git
+    git clone https://github.com/thiagormoreira/mn-php-api.git
     ```
 
 2. Navegue até o diretório do projeto:
 
     ```bash
-    cd seu-projeto
+    cd mn-php-api
     ```
 
 3. Inicie os contêineres Docker. O comando roda tambem uma importação para o banco de dados.
