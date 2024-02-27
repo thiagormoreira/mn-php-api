@@ -56,3 +56,15 @@ Certifique-se de ter os seguintes itens instalados em sua máquina:
     ```bash
     docker-compose down
     ```
+  
+- Parar ambiente e remover volumes:
+
+    ```bash
+    docker-compose down -v
+    ```
+  
+- Buildar ambiente:
+
+    ```bash
+    docker-compose build
+    ```
