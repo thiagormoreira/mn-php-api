@@ -62,6 +62,202 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullname\": \"User\",\n    \"address\": {\n        \"address\": \"Rua Nova\",\n        \"number\": \"1\",\n        \"zip_code\": \"28909-170\",\n        \"city\": {\n            \"name\": \"Sao Paulo\",\n            \"state\": {\n                \"id\": 1,\n                \"name\": \"Sao Paulo\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/user/create",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"fullname\": \"User Edit\",\n    \"address\": {\n        \"id\": \"1\",\n        \"address\": \"Rua Editada d\",\n        \"number\": \"10\",\n        \"zip_code\": \"28909-170\",\n        \"city_id\": \"1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/user/update",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost/user/delete/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"user",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/address",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/address/show/1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"address",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/city",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/city/show/1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"city",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "State",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/state",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/state/show/1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"state",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
