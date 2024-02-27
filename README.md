@@ -68,3 +68,6 @@ Certifique-se de ter os seguintes itens instalados em sua máquina:
     ```bash
     docker-compose build
     ```
+  
+## Coleção Postman
+    Na pasta postman_collection tem uma coleção para testar a API.
